@@ -1,0 +1,45 @@
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import PhoneIcon from '@material-ui/icons/Phone';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import Grid from '@material-ui/core/Grid';
+import { withStyles } from '@material-ui/core/styles';
+import styles from './styles';
+
+const ButtonAppBar = ({ classes, children }) => (
+    <div className={classes.root}>
+        <AppBar position="static">
+            <Toolbar>
+                    <Grid className={classes.container} container justify="space-around" >
+                        <Grid item className={classes.ItemsAtCenter}>
+                            <IconButton
+                                href="tel:+302108011311"
+                                target="_blank"
+                            >
+                                <PhoneIcon/>
+                            </IconButton>
+                            <Typography variant="h6">
+                                +30 210 8011 311
+                            </Typography>
+                        </Grid>
+                        <Grid item className={classes.ItemsAtCenter}>
+                            <IconButton
+                                href="https://goo.gl/maps/5qa13H1zpkEbeNz39"
+                                target="_blank"
+                            >
+                                <LocationOnIcon/>
+                            </IconButton>
+                            <Typography variant="h6">
+                                Διονύσου 70, Κηφισιά
+                            </Typography>
+                        </Grid>
+                    </Grid>
+            </Toolbar>
+        </AppBar>
+        { children }
+    </div>
+);
+
+export default withStyles(styles)(ButtonAppBar);
