@@ -11,6 +11,10 @@ const styles = (theme) => ({
     logo: {
         marginBottom: theme.spacing(6),
     },
+    bgphoto: {
+        width: '100%',
+        height: '100%',
+    },
 });
 
 export default styles;

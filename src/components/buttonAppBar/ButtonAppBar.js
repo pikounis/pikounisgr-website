@@ -1,17 +1,22 @@
 import AppBar from '@material-ui/core/AppBar';
+import { compose } from 'redux';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Grid from '@material-ui/core/Grid';
-import { withStyles } from '@material-ui/core/styles';
-import I18n from '../../components/I18n/I18n';
+import { withStyles, withTheme } from '@material-ui/core/styles';
+import { useMediaQuery } from '@material-ui/core';
+import I18n from '../I18n/I18n';
 import SimpleMenu from './components/simpleMenu';
 import styles from './styles';
 import SimpleTabs from './components/simpleTabs';
 
-const ButtonAppBar = ({ classes, children }) => (
+const ButtonAppBar = ({ classes, children, theme }) => {
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+    return (
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
@@ -40,11 +45,17 @@ const ButtonAppBar = ({ classes, children }) => (
                         </Grid>
                     </Grid>
                 </Toolbar>
-                <SimpleTabs/>
-                <SimpleMenu/>
+                {/*{isMobile ? <SimpleTabs/> : <SimpleMenu/>}*/}
+                {isMobile ? <SimpleMenu/> : <SimpleTabs/>}
             </AppBar>
             {children}
         </div>
     );
+};
 
-export default withStyles(styles)(ButtonAppBar);
+//export default withStyles(styles)(ButtonAppBar);
+
+export default compose(
+    withStyles(styles),
+    withTheme,
+)(ButtonAppBar);
