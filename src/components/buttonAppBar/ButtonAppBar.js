@@ -6,13 +6,16 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
+import I18n from '../../components/I18n/I18n';
+import SimpleMenu from './components/simpleMenu';
 import styles from './styles';
+import SimpleTabs from './components/simpleTabs';
 
 const ButtonAppBar = ({ classes, children }) => (
-    <div className={classes.root}>
-        <AppBar position="static">
-            <Toolbar>
-                    <Grid className={classes.container} container justify="space-around" >
+        <div className={classes.root}>
+            <AppBar position="static">
+                <Toolbar>
+                    <Grid className={classes.container} container justify="space-around">
                         <Grid item className={classes.ItemsAtCenter}>
                             <IconButton
                                 href="tel:+302108011311"
@@ -26,20 +29,22 @@ const ButtonAppBar = ({ classes, children }) => (
                         </Grid>
                         <Grid item className={classes.ItemsAtCenter}>
                             <IconButton
-                                href="https://goo.gl/maps/5qa13H1zpkEbeNz39"
+                                href="https://goo.gl/maps/LoCPQQCewioNfxKx8"
                                 target="_blank"
                             >
                                 <LocationOnIcon/>
                             </IconButton>
                             <Typography variant="h6">
-                                Διονύσου 70, Κηφισιά
+                                <I18n t="address"/>
                             </Typography>
                         </Grid>
                     </Grid>
-            </Toolbar>
-        </AppBar>
-        { children }
-    </div>
-);
+                </Toolbar>
+                <SimpleTabs/>
+                <SimpleMenu/>
+            </AppBar>
+            {children}
+        </div>
+    );
 
 export default withStyles(styles)(ButtonAppBar);

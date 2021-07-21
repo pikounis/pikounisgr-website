@@ -9,10 +9,22 @@ const locales = ['el', 'en'];
 // Dictionary of translations
 const translations = {
     el: {
-        hello: 'kalispera',
+        address: 'Διονύσου 70, Κηφισιά',
+        home: 'Αρχική',
+        ourFish: 'τα ψαρια μας',
+        gallery: 'Φωτογραφίες',
+        awards: 'Βραβεία',
+        ourClients: 'Συνεργάτες',
+        contact: 'Επικοινωνία',
     },
     en: {
-        hello: 'hello',
+        address: 'Dionysou 70, Kifisia',
+        home: 'Home',
+        ourFish: 'Our Fish',
+        gallery: 'Gallery',
+        awards: 'Awards',
+        ourClients: 'Our Clients',
+        contact: 'Contact',
     },
 }
 
