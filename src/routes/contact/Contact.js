@@ -13,6 +13,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import fishbg from '../../assets/fishbg.png';
+import SimpleMenu from './components/SimpleMenu/SimpleMenu';
 // import { spacing } from '@material-ui/system';
 
 
@@ -49,15 +50,9 @@ const Contact = ({ classes }) => (
                     </Typography>
                 </div>
                 <div className={classes.phoneDiv}>
-                    <IconButton
-                        href="https://goo.gl/maps/tbjb6GFiFNnzhWwSA"
-                        target="_blank"
-                    >
-                        <LocationOnIcon/>
-                    </IconButton>
+                    <SimpleMenu />
                     <Typography>
-                        {/*<I18n t="" />*/}
-                        Dionysou 70 Kifisia, 145 63
+                        <I18n t="address" />
                     </Typography>
                 </div>
             </Grid>

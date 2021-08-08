@@ -39,19 +39,9 @@ const SimpleMenu = ({ classes }) => {
             >
                 <MenuItem
                     component={Link}
-                    to="/"
+                    to="/our-fish"
                     onClick={() => {
-                        changeRoute('/');
-                        handleClose();
-                    }}
-                >
-                    <I18n t="home" />
-                </MenuItem>
-                <MenuItem
-                    component={Link}
-                    to="/who-we-are"
-                    onClick={() => {
-                        changeRoute('/who-we-are');
+                        changeRoute('/our-fish');
                         handleClose();
                     }}
                 >
@@ -59,9 +49,9 @@ const SimpleMenu = ({ classes }) => {
                 </MenuItem>
                 <MenuItem
                     component={Link}
-                    to="/what-we-do"
+                    to="/gallery"
                     onClick={() => {
-                        changeRoute('/what-we-do');
+                        changeRoute('/gallery');
                         handleClose();
                     }}
                 >
@@ -69,19 +59,9 @@ const SimpleMenu = ({ classes }) => {
                 </MenuItem>
                 <MenuItem
                     component={Link}
-                    to="/contact"
+                    to="/awards"
                     onClick={() => {
-                        changeRoute('/contact');
-                        handleClose();
-                    }}
-                >
-                    <I18n t="ourClients" />
-                </MenuItem>
-                <MenuItem
-                    component={Link}
-                    to="/contact"
-                    onClick={() => {
-                        changeRoute('/contact');
+                        changeRoute('/awards');
                         handleClose();
                     }}
                 >

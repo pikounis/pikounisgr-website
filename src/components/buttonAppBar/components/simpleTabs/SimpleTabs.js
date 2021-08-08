@@ -6,10 +6,16 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { Link } from 'react-router-dom';
+import { changeRoute } from 'models/ui';
 import I18n from '../../../I18n/I18n';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     return (
         <div
@@ -62,26 +68,52 @@ export default function SimpleTabs() {
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab
                         label={<I18n t="home" />}
+                        component={Link}
+                        to="/"
+                        onClick={() => {
+                            changeRoute('/');
+                            handleClose();
+                        }}
                         {...a11yProps(0)}
                     />
                     <Tab
                         label={<I18n t="ourFish" />}
+                        component={Link}
+                        to="/our-fish"
+                        onClick={() => {
+                            changeRoute('/our-fish');
+                            handleClose();
+                        }}
                         {...a11yProps(1)}
                     />
                     <Tab
                         label={<I18n t="gallery" />}
+                        component={Link}
+                        to="/gallery"
+                        onClick={() => {
+                            changeRoute('/gallery');
+                            handleClose();
+                        }}
                         {...a11yProps(2)}
                     />
                     <Tab
-                        label={<I18n t="ourClients" />}
-                         {...a11yProps(3)}
-                    />
-                    <Tab
                         label={<I18n t="awards" />}
+                        component={Link}
+                        to="/awards"
+                        onClick={() => {
+                            changeRoute('/awards');
+                            handleClose();
+                        }}
                          {...a11yProps(4)}
                     />
                     <Tab
                         label={<I18n t="contact" />}
+                        component={Link}
+                        to="/contact"
+                        onClick={() => {
+                            changeRoute('/contact');
+                            handleClose();
+                        }}
                          {...a11yProps(5)}
                     />
                 </Tabs>

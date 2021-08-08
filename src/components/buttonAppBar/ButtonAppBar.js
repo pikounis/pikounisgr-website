@@ -47,15 +47,12 @@ const ButtonAppBar = ({ classes, children, theme }) => {
                         </Grid>
                     </Grid>
                 </Toolbar>
-                {/*{isMobile ? <SimpleTabs/> : <SimpleMenu/>}*/}
                 {isMobile ? <SimpleMenu/> : <SimpleTabs/>}
             </AppBar>
             {children}
         </div>
     );
 };
-
-//export default withStyles(styles)(ButtonAppBar);
 
 export default compose(
     withStyles(styles),
