@@ -54,6 +54,7 @@
     "@reduxjs/toolkit": "^1.6.0",
     "final-form": "^4.20.2",
     "firebase": "^8.6.5",
+    "google-maps-react": "^2.0.6",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "mui-rff": "^3.0.9",

@@ -1,9 +1,77 @@
 /* eslint-disable */
 
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import I18n from '../../components/I18n/I18n';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import styles from './styles';
+import { withStyles } from '@material-ui/core/styles';
+import map from '../../assets/map.png';
+import IconButton from '@material-ui/core/IconButton';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import fishbg from '../../assets/fishbg.png';
+// import { spacing } from '@material-ui/system';
 
-const Contact = () => (
-    <h1>Contact</h1>
+
+
+const Contact = ({ classes }) => (
+    <Container className={classes.container}>
+        <Typography variant="h2" className={classes.title}>
+            <I18n t="contact" />
+        </Typography>
+        <Grid container className={classes.root} spacing={2}>
+            <Grid item xs={6}>
+                <div className={classes.phoneDiv}>
+                    <IconButton
+                        href="tel:+302108011311"
+                        target="_blank"
+                    >
+                        <PhoneIcon/>
+                    </IconButton>
+                    <Typography>
+                        {/*<I18n t="" />*/}
+                        +30 210 8011 311
+                    </Typography>
+                </div>
+                <div className={classes.phoneDiv}>
+                    <IconButton
+                        href="mailto:info@pikounis.gr"
+                        target="_blank"
+                    >
+                        <EmailIcon/>
+                    </IconButton>
+                    <Typography>
+                        {/*<I18n t="" />*/}
+                        info@pikounis.gr
+                    </Typography>
+                </div>
+                <div className={classes.phoneDiv}>
+                    <IconButton
+                        href="https://goo.gl/maps/tbjb6GFiFNnzhWwSA"
+                        target="_blank"
+                    >
+                        <LocationOnIcon/>
+                    </IconButton>
+                    <Typography>
+                        {/*<I18n t="" />*/}
+                        Dionysou 70 Kifisia, 145 63
+                    </Typography>
+                </div>
+            </Grid>
+            <Grid item xs={6}>
+                <img
+                    src={map}
+                    alt="map"
+                    className={classes.map}
+                />
+            </Grid>
+        </Grid>
+    </Container>
+
+
 );
 
-export default Contact;
+export default withStyles(styles)(Contact);

@@ -19,7 +19,9 @@ const ButtonAppBar = ({ classes, children, theme }) => {
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <Toolbar>
+                <Toolbar
+                    className={classes.bar}
+                >
                     <Grid className={classes.container} container justify="space-around">
                         <Grid item className={classes.ItemsAtCenter}>
                             <IconButton

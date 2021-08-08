@@ -12,6 +12,9 @@ const styles = (theme) => ({
         alignItems: 'center',
         display: 'flex',
     },
+    bar: {
+        height: '50',
+    },
 });
 
 export default styles;
