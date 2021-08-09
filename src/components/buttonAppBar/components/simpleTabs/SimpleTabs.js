@@ -11,7 +11,9 @@ import { changeRoute } from 'models/ui';
 import I18n from '../../../I18n/I18n';
 
 function TabPanel(props) {
-    const { children, value, index, ...other } = props;
+    const {
+        children, value, index, ...other
+    } = props;
 
     const handleClose = () => {
         setAnchorEl(null);
@@ -104,7 +106,7 @@ export default function SimpleTabs() {
                             changeRoute('/awards');
                             handleClose();
                         }}
-                         {...a11yProps(4)}
+                        {...a11yProps(4)}
                     />
                     <Tab
                         label={<I18n t="contact" />}
@@ -114,7 +116,7 @@ export default function SimpleTabs() {
                             changeRoute('/contact');
                             handleClose();
                         }}
-                         {...a11yProps(5)}
+                        {...a11yProps(5)}
                     />
                 </Tabs>
             </AppBar>
