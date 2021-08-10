@@ -16,6 +16,7 @@ const translations = {
         awards: 'Βραβεία',
         ourClients: 'Συνεργάτες',
         contact: 'Επικοινωνία',
+        timeOpen: 'Δευτέρα - Σάββατο, 8:00πμ - 2:00μμ'
     },
     en: {
         address: 'Dionysou 70, Kifisia',
@@ -25,6 +26,7 @@ const translations = {
         awards: 'Awards',
         ourClients: 'Our Clients',
         contact: 'Contact',
+        timeOpen: 'Monday - Saturday, 8:00am - 2:00pm',
     },
 }
 

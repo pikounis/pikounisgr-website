@@ -11,6 +11,7 @@ import map from '../../assets/map.png';
 import IconButton from '@material-ui/core/IconButton';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import fishbg from '../../assets/fishbg.png';
 import SimpleMenu from './components/SimpleMenu/SimpleMenu';
@@ -55,13 +56,19 @@ const Contact = ({ classes }) => (
                         <I18n t="address" />
                     </Typography>
                 </div>
+                <div className={classes.phoneDiv}>
+                    {/*<AccessTimeIcon />*/}
+                    <Typography>
+                        <I18n t="timeOpen" />
+                    </Typography>
+                </div>
             </Grid>
             <Grid item xs={6}>
-                <img
-                    src={map}
-                    alt="map"
-                    className={classes.map}
-                />
+                {/*<img*/}
+                {/*    src={map}*/}
+                {/*    alt="map"*/}
+                {/*    className={classes.map}*/}
+                {/*/>*/}
             </Grid>
         </Grid>
     </Container>
