@@ -13,9 +13,6 @@ const styles = (theme) => ({
         // padding: '16px',
     },
     item: {
-        // borderTop: '1px solid #ffffff',
-        // borderLeft: '1px solid #ffffff',
-        // borderRight: '1px solid #ffffff',
         padding: '16px',
         alignItems: 'center',
         display: 'flex',
@@ -23,7 +20,12 @@ const styles = (theme) => ({
     ItemsAtCenter: {
         alignItems: 'center',
         display: 'flex',
-
+        justifyContent: 'center',
+    },
+    centerButtons: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        // display: 'flex',
     },
 });
 

@@ -13,6 +13,7 @@ import SimpleMenu from './components/simpleMenu';
 import styles from './styles';
 import SimpleTabs from './components/simpleTabs';
 import Footer from './components/footer';
+import InfoBar from './components/infoBar';
 
 const ButtonAppBar = ({ classes, children, theme }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -20,37 +21,10 @@ const ButtonAppBar = ({ classes, children, theme }) => {
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <Toolbar
-                    className={classes.bar}
-                >
-                    <Grid className={classes.container} container justify="space-around">
-                        <Grid item className={classes.ItemsAtCenter}>
-                            <IconButton
-                                href="tel:+302108011311"
-                                target="_blank"
-                            >
-                                <PhoneIcon/>
-                            </IconButton>
-                            <Typography variant="h6">
-                                +30 210 8011 311
-                            </Typography>
-                        </Grid>
-                        <Grid item className={classes.ItemsAtCenter}>
-                            <IconButton
-                                href="https://goo.gl/maps/LoCPQQCewioNfxKx8"
-                                target="_blank"
-                            >
-                                <LocationOnIcon/>
-                            </IconButton>
-                            <Typography variant="h6">
-                                <I18n t="address"/>
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                </Toolbar>
                 {isMobile ? <SimpleMenu/> : <SimpleTabs/>}
             </AppBar>
             {children}
+            {/*<InfoBar/>*/}
             <Footer />
         </div>
     );
