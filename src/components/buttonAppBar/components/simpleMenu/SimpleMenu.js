@@ -39,6 +39,16 @@ const SimpleMenu = ({ classes }) => {
             >
                 <MenuItem
                     component={Link}
+                    to="/"
+                    onClick={() => {
+                        changeRoute('/');
+                        handleClose();
+                    }}
+                >
+                    <I18n t="home" />
+                </MenuItem>
+                <MenuItem
+                    component={Link}
                     to="/our-fish"
                     onClick={() => {
                         changeRoute('/our-fish');
