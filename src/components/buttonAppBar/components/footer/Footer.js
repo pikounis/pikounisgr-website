@@ -57,9 +57,9 @@ const Footer = ({ classes }) => (
                         <IconButton href="https://www.facebook.com/Pikounis-112467636890824/?hc_ref=ART0t1_dIxd6KaoN3pgnluoVuonRPIPwS6rXu0F3grjOfgD-obWlp2_YZLqeeTW4NF0&fref=nf&__xts__[0]=68.ARC-9pZH9mpmt_MIhq4DhjnhuZkppaBPMw0wnjpIgOQAuXhG0RVbFZ060IaRwcHwz9VwzZ0F6DWSG7SOmo952rrHVxNqu1ITGdWxbY3ZnF_-BNQdNcaFQ_DgTtMfffgNgtWlmq8hfc9AzRHBBygPq3Bsq8FuxVlpOoXxXWtZFD0NTxuKzXafqQ-nhr23dMyyJ-Lj5F3x8aKI73IdMAeAfRBQOIcY5arJvQRnGjs7h073X7FHbI8d2XEqFdDCrnEP2t4KP7kzKPI3yQimR79upZ0meaQtqVPtNk9kwwjAkY8ywxMnLfM&__tn__=kC-R/" target="_blank">
                             <FacebookIcon />
                         </IconButton>
-                        <IconButton href="tel:+302108011311">
-                            <CallIcon />
-                        </IconButton>
+                        {/*<IconButton href="tel:+302108011311">*/}
+                        {/*    <CallIcon />*/}
+                        {/*</IconButton>*/}
                         <IconButton href="mailto:info@pikounis.gr" target="_blank">
                             <ChatIcon />
                         </IconButton>

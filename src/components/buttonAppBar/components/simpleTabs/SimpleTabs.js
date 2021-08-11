@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -9,6 +9,8 @@ import Box from '@material-ui/core/Box';
 import { Link } from 'react-router-dom';
 import { changeRoute } from 'models/ui';
 import I18n from '../../../I18n/I18n';
+import styles from './styles';
+import pikounisLogo from '../../../../assets/logo1112.png';
 
 function TabPanel(props) {
     const {
@@ -49,15 +51,7 @@ function a11yProps(index) {
     };
 }
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        backgroundColor: theme.palette.background.paper,
-    },
-}));
-
-export default function SimpleTabs() {
-    const classes = useStyles();
+const SimpleTabs = ({ classes }) => {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -67,7 +61,16 @@ export default function SimpleTabs() {
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+                <img
+                    src={pikounisLogo}
+                    className={classes.pikounisLogo}
+                />
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="simple tabs example"
+                    // className={classes.theTabs}
+                >
                     <Tab
                         label={<I18n t="home" />}
                         component={Link}
@@ -106,7 +109,7 @@ export default function SimpleTabs() {
                             changeRoute('/awards');
                             handleClose();
                         }}
-                        {...a11yProps(4)}
+                        {...a11yProps(3)}
                     />
                     <Tab
                         label={<I18n t="contact" />}
@@ -116,10 +119,12 @@ export default function SimpleTabs() {
                             changeRoute('/contact');
                             handleClose();
                         }}
-                        {...a11yProps(5)}
+                        {...a11yProps(4)}
                     />
                 </Tabs>
             </AppBar>
         </div>
     );
-}
+};
+
+export default withStyles(styles)(SimpleTabs);
