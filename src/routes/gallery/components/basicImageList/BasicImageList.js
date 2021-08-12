@@ -18,6 +18,16 @@ import img11 from 'assets/gallery/11.png';
 import img12 from 'assets/gallery/12.png';
 import img13 from 'assets/gallery/13.png';
 import img14 from 'assets/gallery/14.png';
+import img15 from 'assets/gallery/15.png';
+import img16 from 'assets/gallery/16.png';
+import img17 from 'assets/gallery/17.png';
+import img18 from 'assets/gallery/18.png';
+import img19 from 'assets/gallery/19.png';
+import img20 from 'assets/gallery/20.png';
+import img21 from 'assets/gallery/21.png';
+import img22 from 'assets/gallery/22.png';
+import img23 from 'assets/gallery/23.png';
+import img24 from 'assets/gallery/23.png';
 
 import styles from './styles';
 
@@ -26,37 +36,37 @@ const itemData = [
         img: img1,
         title: 'Image',
         author: 'author',
-        cols: 2,
+        cols: 1,
     },
     {
         img: img2,
         title: 'Image',
         author: 'author',
-        cols: 1,
+        cols: 2,
     },
     {
         img: img5,
         title: 'Image',
         author: 'author',
-        cols: 1,
+        cols: 2,
     },
     {
         img: img3,
         title: 'Image',
         author: 'author',
-        cols: 2,
+        cols: 1,
     },
     {
         img: img4,
         title: 'Image',
         author: 'author',
-        cols: 2,
+        cols: 1,
     },
     {
         img: img6,
         title: 'Image',
         author: 'author',
-        cols: 1,
+        cols: 2,
     },
     {
         img: img7,
@@ -74,10 +84,16 @@ const itemData = [
         img: img9,
         title: 'Image',
         author: 'author',
-        cols: 1,
+        cols: 2,
     },
     {
         img: img10,
+        title: 'Image',
+        author: 'author',
+        cols: 1,
+    },
+    {
+        img: img14,
         title: 'Image',
         author: 'author',
         cols: 2,
@@ -86,24 +102,73 @@ const itemData = [
         img: img11,
         title: 'Image',
         author: 'author',
-        cols: 2,
+        cols: 1,
     },
     {
         img: img12,
         title: 'Image',
         author: 'author',
         cols: 1,
-    },    {
+    },
+    {
         img: img13,
         title: 'Image',
         author: 'author',
         cols: 2,
     },
     {
-        img: img14,
+        img: img15,
         title: 'Image',
         author: 'author',
         cols: 1,
+    },
+    {
+        img: img16,
+        title: 'Image',
+        author: 'author',
+        cols: 2,
+    },
+    {
+        img: img17,
+        title: 'Image',
+        author: 'author',
+        cols: 1,
+    },
+    {
+        img: img18,
+        title: 'Image',
+        author: 'author',
+        cols: 1,
+    },
+    {
+        img: img19,
+        title: 'Image',
+        author: 'author',
+        cols: 2,
+    },
+    {
+        img: img20,
+        title: 'Image',
+        author: 'author',
+        cols: 2,
+    },
+    {
+        img: img21,
+        title: 'Image',
+        author: 'author',
+        cols: 2,
+    },
+    {
+        img: img22,
+        title: 'Image',
+        author: 'author',
+        cols: 2,
+    },
+    {
+        img: img23,
+        title: 'Image',
+        author: 'author',
+        cols: 2,
     },
 ];
 
