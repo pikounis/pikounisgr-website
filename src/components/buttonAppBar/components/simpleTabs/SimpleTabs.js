@@ -11,6 +11,7 @@ import { changeRoute } from 'models/ui';
 import I18n from '../../../I18n/I18n';
 import styles from './styles';
 import pikounisLogo from '../../../../assets/logo1112.png';
+import MenuItem from '@material-ui/core/MenuItem';
 
 function TabPanel(props) {
     const {
@@ -61,65 +62,50 @@ const SimpleTabs = ({ classes }) => {
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <img
-                    src={pikounisLogo}
-                    className={classes.pikounisLogo}
-                />
+                {/*<img*/}
+                {/*    src={pikounisLogo}*/}
+                {/*    className={classes.pikounisLogo}*/}
+                {/*/>*/}
                 <Tabs
                     value={value}
                     onChange={handleChange}
                     aria-label="simple tabs example"
-                    // className={classes.theTabs}
+                    className={classes.theTabs}
                 >
                     <Tab
                         label={<I18n t="home" />}
+                        {...a11yProps(0)}
                         component={Link}
                         to="/"
-                        onClick={() => {
-                            changeRoute('/');
-                            handleClose();
-                        }}
-                        {...a11yProps(0)}
+                        onClick={() => changeRoute('/')}
                     />
                     <Tab
                         label={<I18n t="ourFish" />}
+                        {...a11yProps(1)}
                         component={Link}
                         to="/our-fish"
-                        onClick={() => {
-                            changeRoute('/our-fish');
-                            handleClose();
-                        }}
-                        {...a11yProps(1)}
+                        onClick={() => changeRoute('/our-fish')}
                     />
                     <Tab
                         label={<I18n t="gallery" />}
+                        {...a11yProps(2)}
                         component={Link}
                         to="/gallery"
-                        onClick={() => {
-                            changeRoute('/gallery');
-                            handleClose();
-                        }}
-                        {...a11yProps(2)}
+                        onClick={() => changeRoute('/gallery')}
                     />
                     <Tab
                         label={<I18n t="awards" />}
+                        {...a11yProps(3)}
                         component={Link}
                         to="/awards"
-                        onClick={() => {
-                            changeRoute('/awards');
-                            handleClose();
-                        }}
-                        {...a11yProps(3)}
+                        onClick={() => changeRoute('/awards')}
                     />
                     <Tab
                         label={<I18n t="contact" />}
+                        {...a11yProps(4)}
                         component={Link}
                         to="/contact"
-                        onClick={() => {
-                            changeRoute('/contact');
-                            handleClose();
-                        }}
-                        {...a11yProps(4)}
+                        onClick={() => changeRoute('/contact')}
                     />
                 </Tabs>
             </AppBar>

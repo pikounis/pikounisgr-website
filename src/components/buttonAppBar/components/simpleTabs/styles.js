@@ -6,7 +6,7 @@ const styles = (theme) => ({
     },
     theTabs: {
         position: 'absolute',
-        right: 10,
+        right: 90,
         top: 10,
         // color: '#000000',
     },
