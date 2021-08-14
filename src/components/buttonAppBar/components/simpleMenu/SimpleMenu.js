@@ -49,13 +49,13 @@ const SimpleMenu = ({ classes }) => {
                 </MenuItem>
                 <MenuItem
                     component={Link}
-                    to="/our-fish"
+                    to="/who-we-are"
                     onClick={() => {
-                        changeRoute('/our-fish');
+                        changeRoute('/who-we-are');
                         handleClose();
                     }}
                 >
-                    <I18n t="ourFish" />
+                    <I18n t="whoWeAre" />
                 </MenuItem>
                 <MenuItem
                     component={Link}

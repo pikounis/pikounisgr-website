@@ -80,11 +80,11 @@ const SimpleTabs = ({ classes }) => {
                         onClick={() => changeRoute('/')}
                     />
                     <Tab
-                        label={<I18n t="ourFish" />}
+                        label={<I18n t="whoWeAre" />}
                         {...a11yProps(1)}
                         component={Link}
-                        to="/our-fish"
-                        onClick={() => changeRoute('/our-fish')}
+                        to="/who-we-are"
+                        onClick={() => changeRoute('/who-we-are')}
                     />
                     <Tab
                         label={<I18n t="gallery" />}

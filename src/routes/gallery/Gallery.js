@@ -18,6 +18,7 @@ const Gallery = ({ classes }) => (
             <I18n t="gallery" />
         </Typography>
         <BasicImageList className={classes.gallery}/>
+        <div className={classes.spacer} />
     </Container>
 );
 

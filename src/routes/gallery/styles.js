@@ -17,6 +17,9 @@ const styles = (theme) => ({
     gallery: {
         margin: '0 auto',
     },
+    spacer: {
+        padding: 30,
+    },
 });
 
 export default styles;

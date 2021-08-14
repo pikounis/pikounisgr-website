@@ -14,7 +14,7 @@ const translations = {
         ourFish: 'τα ψαρια μας',
         gallery: 'Φωτογραφίες',
         awards: 'Διακρίσεις',
-        ourClients: 'Συνεργάτες',
+        whoWeAre: 'Ποιοι είμαστε',
         contact: 'Επικοινωνία',
         timeOpen: 'Δευτέρα - Σάββατο, 8:00πμ - 3:00μμ',
         theNamePikounis: 'Tο όνομα Πικούνης αποτελεί ορόσημο για την αγορά φρέσκου ψαριού,' +
@@ -29,7 +29,7 @@ const translations = {
         ourFish: 'Our Fish',
         gallery: 'Gallery',
         awards: 'Awards',
-        ourClients: 'Our Clients',
+        whoWeAre: 'Who we are',
         contact: 'Contact',
         timeOpen: 'Monday - Saturday, 8:00am - 3:00pm',
         theNamePikounis: 'The name Pikounis is the definition of fresh fish since the best restaurants ' +
