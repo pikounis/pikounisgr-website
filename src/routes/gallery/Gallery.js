@@ -5,6 +5,8 @@ import Container from '@material-ui/core/Container';
 import { withStyles } from '@material-ui/core/styles';
 import BasicImageList from './components/basicImageList';
 import styles from './styles';
+import I18n from '../../components/I18n/I18n';
+
 
 const Gallery = ({ classes }) => (
     <Container maxWidth={'md'}>
@@ -13,7 +15,7 @@ const Gallery = ({ classes }) => (
             variant={'h3'}
             className={classes.title}
         >
-            Gallery
+            <I18n t="gallery" />
         </Typography>
         <BasicImageList className={classes.gallery}/>
     </Container>

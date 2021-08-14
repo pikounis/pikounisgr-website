@@ -13,7 +13,6 @@ import SimpleMenu from './components/simpleMenu';
 import styles from './styles';
 import SimpleTabs from './components/simpleTabs';
 import Footer from './components/footer';
-import InfoBar from './components/infoBar';
 
 const ButtonAppBar = ({ classes, children, theme }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -24,7 +23,6 @@ const ButtonAppBar = ({ classes, children, theme }) => {
                 {isMobile ? <SimpleMenu/> : <SimpleTabs/>}
             </AppBar>
             {children}
-            {/*<InfoBar/>*/}
             <Footer />
         </div>
     );

@@ -13,10 +13,10 @@ const translations = {
         home: 'Αρχική',
         ourFish: 'τα ψαρια μας',
         gallery: 'Φωτογραφίες',
-        awards: 'Βραβεία',
+        awards: 'Διακρίσεις',
         ourClients: 'Συνεργάτες',
         contact: 'Επικοινωνία',
-        timeOpen: 'Δευτέρα - Σάββατο, 8:00πμ - 2:00μμ',
+        timeOpen: 'Δευτέρα - Σάββατο, 8:00πμ - 3:00μμ',
         theNamePikounis: 'Tο όνομα Πικούνης αποτελεί ορόσημο για την αγορά φρέσκου ψαριού,' +
             ' αφού μας εμπιστεύονται τα καλύτερα εστιατόρια και ξενοδοχεία της Αθήνας.' +
             ' Επισκεφθείτε σήμερα κιόλας το κατάστημα μας στην Κηφισιά για να ανακαλύψετε' +
@@ -31,7 +31,7 @@ const translations = {
         awards: 'Awards',
         ourClients: 'Our Clients',
         contact: 'Contact',
-        timeOpen: 'Monday - Saturday, 8:00am - 2:00pm',
+        timeOpen: 'Monday - Saturday, 8:00am - 3:00pm',
         theNamePikounis: 'The name Pikounis is the definition of fresh fish since the best restaurants ' +
             'and hotels of athens prefer us. Visit today our store in Kifisia to discover a unique store ' +
             'and the wide selection of fish, even the rare ones.',
