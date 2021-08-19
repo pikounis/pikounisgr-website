@@ -14,13 +14,13 @@ import styles from './styles';
 import SimpleTabs from './components/simpleTabs';
 import Footer from './components/footer';
 
-const ButtonAppBar = ({ classes, children, theme }) => {
+const Layout = ({ classes, children, theme }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                {isMobile ? <SimpleMenu/> : <SimpleTabs/>}
+                {isMobile ? <SimpleMenu /> : <SimpleTabs />}
             </AppBar>
             {children}
             <Footer />
@@ -31,4 +31,4 @@ const ButtonAppBar = ({ classes, children, theme }) => {
 export default compose(
     withStyles(styles),
     withTheme,
-)(ButtonAppBar);
+)(Layout);

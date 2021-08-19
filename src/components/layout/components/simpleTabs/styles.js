@@ -6,9 +6,8 @@ const styles = (theme) => ({
     },
     theTabs: {
         position: 'absolute',
-        right: 90,
+        right: '25%',
         top: 10,
-        // color: '#000000',
     },
     pikounisLogo: {
         width: '3em',

@@ -24,56 +24,44 @@ const Contact = ({ classes }) => (
         <Typography variant="h2" className={classes.title}>
             <I18n t="contact" />
         </Typography>
-        <Grid container className={classes.root} spacing={2}>
-            <Grid item xs={6}>
-                <div className={classes.phoneDiv}>
-                    <IconButton
-                        href="tel:+302108011311"
-                        target="_blank"
-                    >
-                        <PhoneIcon/>
-                    </IconButton>
-                    <Typography>
-                        {/*<I18n t="" />*/}
-                        +30 210 8011 311
-                    </Typography>
-                </div>
-                <div className={classes.phoneDiv}>
-                    <IconButton
-                        href="mailto:info@pikounis.gr"
-                        target="_blank"
-                    >
-                        <EmailIcon/>
-                    </IconButton>
-                    <Typography>
-                        {/*<I18n t="" />*/}
-                        info@pikounis.gr
-                    </Typography>
-                </div>
-                <div className={classes.phoneDiv}>
-                    <SimpleMenu />
-                    <Typography>
-                        <I18n t="address" />
-                    </Typography>
-                </div>
-                <div className={classes.phoneDiv}>
-                    {/*<AccessTimeIcon />*/}
-                    <Typography>
-                        <I18n t="timeOpen" />
-                    </Typography>
-                </div>
-            </Grid>
-            <Grid item xs={6}>
-                {/*<img*/}
-                {/*    src={map}*/}
-                {/*    alt="map"*/}
-                {/*    className={classes.map}*/}
-                {/*/>*/}
-            </Grid>
-        </Grid>
+        <div className={classes.phoneDiv}>
+            <IconButton
+                href="tel:+302108011311"
+                target="_blank"
+            >
+                <PhoneIcon/>
+            </IconButton>
+            <Typography>
+                {/*<I18n t="" />*/}
+                +30 210 8011 311
+            </Typography>
+        </div>
+        <div className={classes.phoneDiv}>
+            <IconButton
+                href="mailto:info@pikounis.gr"
+                target="_blank"
+            >
+                <EmailIcon/>
+            </IconButton>
+            <Typography>
+                {/*<I18n t="" />*/}
+                info@pikounis.gr
+            </Typography>
+        </div>
+        <div className={classes.phoneDiv}>
+            <SimpleMenu />
+            <Typography>
+                <I18n t="address" />
+            </Typography>
+        </div>
+        <div className={classes.phoneDiv}>
+            {/*<AccessTimeIcon />*/}
+            <Typography>
+                <I18n t="timeOpen" />
+            </Typography>
+        </div>
+        <div className={classes.spacer} />
     </Container>
-
-
 );
 
 export default withStyles(styles)(Contact);

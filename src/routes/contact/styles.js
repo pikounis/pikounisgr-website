@@ -4,8 +4,8 @@ const styles = (theme) => ({
     },
     title: {
         textAlign: 'center',
-        paddingTop: '1em',
-        paddingBottom: '2em',
+        paddingTop: '1.8em',
+        paddingBottom: '1em',
     },
     map: {
         width: '20em',
@@ -14,6 +14,9 @@ const styles = (theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    spacer: {
+        paddingBottom: 200,
     },
 });
 

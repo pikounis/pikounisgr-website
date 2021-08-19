@@ -22,7 +22,9 @@ const translations = {
             ' Επισκεφθείτε σήμερα κιόλας το κατάστημα μας στην Κηφισιά για να ανακαλύψετε' +
             ' ένα μοναδικό ψαράδικο και να απολαύσετε την τεράστια ποικιλία σε ψάρια,' +
             ' θαλασσινά και οστρακοειδή, ακόμη και στα πιο δυσεύρετα είδη.',
+        yachtSupplies: 'Τροφοδοσίες σκαφών αναψυχής'
     },
+
     en: {
         address: 'Dionysou 70, Kifisia',
         home: 'Home',
@@ -35,6 +37,7 @@ const translations = {
         theNamePikounis: 'The name Pikounis is the definition of fresh fish since the best restaurants ' +
             'and hotels of athens prefer us. Visit today our store in Kifisia to discover a unique store ' +
             'and the wide selection of fish, even the rare ones.',
+        yachtSupplies: 'Yacht Supplies',
     },
 }
 

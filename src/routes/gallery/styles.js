@@ -7,7 +7,7 @@ const styles = (theme) => ({
     title: {
         textAlign: 'center',
         paddingTop: 30,
-        paddingBottom: 10,
+        paddingBottom: 30,
         zIndex: 100,
         // fontSize: 50,
     },

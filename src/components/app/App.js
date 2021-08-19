@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home, About, WhoWeAre, Gallery, Awards, Contact } from 'routes';
-import ButtonAppBar from 'components/buttonAppBar';
+import ButtonAppBar from 'components/layout';
 // Match locales with regular expression containing each locale separated by `|`
 const base = '/:locale(en|el)?';
 

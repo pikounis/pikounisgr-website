@@ -15,6 +15,10 @@ const styles = (theme) => ({
         width: '100%',
         height: '100%',
     },
+    spacer: {
+        paddingTop: 50,
+        paddingBottom: 50,
+    },
 });
 
 export default styles;

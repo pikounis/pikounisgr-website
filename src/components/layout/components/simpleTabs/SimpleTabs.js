@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { compose } from 'redux';
+import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -9,8 +9,10 @@ import Box from '@material-ui/core/Box';
 import { Link } from 'react-router-dom';
 import { changeRoute } from 'models/ui';
 import I18n from '../../../I18n/I18n';
+import { withProps } from 'libraries/components';
+import { tabIndex } from 'models/ui';
 import styles from './styles';
-import pikounisLogo from '../../../../assets/logo1112.png';
+import pikounisLogo from 'assets/logo1112.png';
 import MenuItem from '@material-ui/core/MenuItem';
 
 function TabPanel(props) {
@@ -39,12 +41,6 @@ function TabPanel(props) {
     );
 }
 
-TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.any.isRequired,
-    value: PropTypes.any.isRequired,
-};
-
 function a11yProps(index) {
     return {
         id: `simple-tab-${index}`,
@@ -52,11 +48,10 @@ function a11yProps(index) {
     };
 }
 
-const SimpleTabs = ({ classes }) => {
-    const [value, setValue] = React.useState(0);
+const SimpleTabs = ({ classes, tabIndex, changeRoute }) => {
 
     const handleChange = (event, newValue) => {
-        setValue(newValue);
+        changeRoute(newValue);
     };
 
     return (
@@ -67,7 +62,7 @@ const SimpleTabs = ({ classes }) => {
                 {/*    className={classes.pikounisLogo}*/}
                 {/*/>*/}
                 <Tabs
-                    value={value}
+                    value={tabIndex}
                     onChange={handleChange}
                     aria-label="simple tabs example"
                     className={classes.theTabs}
@@ -113,4 +108,10 @@ const SimpleTabs = ({ classes }) => {
     );
 };
 
-export default withStyles(styles)(SimpleTabs);
+export default compose(
+    withStyles(styles),
+    withProps({
+        tabIndex,
+        changeRoute,
+    }),
+)(SimpleTabs);
