@@ -7,7 +7,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import styles from './styles';
 import { withStyles } from '@material-ui/core/styles';
-import map from '../../assets/map.png';
+import map from '../../assets/maps/map.png';
 import IconButton from '@material-ui/core/IconButton';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
@@ -21,7 +21,10 @@ import SimpleMenu from './components/SimpleMenu/SimpleMenu';
 
 const Contact = ({ classes }) => (
     <Container className={classes.container}>
-        <Typography variant="h2" className={classes.title}>
+        <Typography
+            variant="h3"
+            className={classes.title}
+        >
             <I18n t="contact" />
         </Typography>
         <div className={classes.phoneDiv}>
