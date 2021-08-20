@@ -14,6 +14,9 @@ const styles = (theme) => ({
     bgphoto: {
         width: '100%',
         height: '100%',
+        // backgroundPosition: 'center',
+        // backgroundRepeat: 'no-repeat',
+        // backgroundSize: 'cover',
     },
     spacer: {
         paddingTop: 50,

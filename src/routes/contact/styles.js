@@ -2,9 +2,12 @@ const styles = (theme) => ({
     container: {
         maxWidth: '85%',
     },
+    spacer: {
+        paddingTop: 100,
+    },
     title: {
         textAlign: 'center',
-        paddingTop: '1.8em',
+        // paddingTop: '1.8em',
         paddingBottom: '1em',
     },
     map: {
@@ -14,9 +17,6 @@ const styles = (theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    spacer: {
-        paddingBottom: 200,
     },
 });
 

@@ -21,6 +21,7 @@ import SimpleMenu from './components/SimpleMenu/SimpleMenu';
 
 const Contact = ({ classes }) => (
     <Container className={classes.container}>
+        <div className={classes.spacer} />
         <Typography
             variant="h3"
             className={classes.title}
