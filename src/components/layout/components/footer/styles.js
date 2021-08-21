@@ -12,6 +12,7 @@ const styles = (theme) => ({
     container: {
         // backgroundColor: '#f3f3f3',
         // padding: '16px',
+        // flexGrow: 1,
     },
     item: {
         padding: '16px',
@@ -21,7 +22,8 @@ const styles = (theme) => ({
     ItemsAtCenter: {
         alignItems: 'center',
         display: 'flex',
-        justifyContent: 'center',
+        // justifyContent: 'center',
+        justifyContent: 'flex-start',
     },
     centerButtons: {
         alignItems: 'center',

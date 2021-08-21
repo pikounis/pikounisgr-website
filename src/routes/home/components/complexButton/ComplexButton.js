@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import photo from '../../../../assets/trofodosies.png';
+import photo from '../../../../assets/pershing.png';
 import I18n from '../../../../components/I18n/I18n';
 import styles from './styles';
 

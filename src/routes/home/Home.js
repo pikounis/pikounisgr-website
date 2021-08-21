@@ -7,6 +7,7 @@ import styles from './styles';
 import I18n from '../../components/I18n/I18n';
 import ComplexButton from './components/complexButton';
 import shop from '../../assets/gallery/22.png';
+// import fishbg from '../../assets/fishbg.png';
 
 const Home = ({ classes }) => (
     <div>
