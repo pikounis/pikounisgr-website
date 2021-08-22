@@ -13,6 +13,7 @@ import cert3 from '../../../../assets/awards/cert3.png';
 import news1 from '../../../../assets/news/realtaste2.png';
 import news2 from '../../../../assets/news/efimerida2.png';
 import news3 from '../../../../assets/news/mamalakis.png';
+import AlertDialog from './components/alertDialog';
 import styles from './styles';
 
 const MediaCard = ({ classes }) => (
@@ -25,7 +26,7 @@ const MediaCard = ({ classes }) => (
             alignItems="stretch"
             style={{ paddingTop: 20 }}
         >
-            <Grid item>
+            <Grid item onClick={<AlertDialog />}>
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
@@ -37,7 +38,9 @@ const MediaCard = ({ classes }) => (
                 </Card>
             </Grid>
             <Grid item>
-                <Card className={classes.root}>
+                <Card
+                    className={classes.root}
+                >
                     <CardActionArea>
                         <CardMedia
                             className={classes.media}

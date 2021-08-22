@@ -19,9 +19,8 @@ const Layout = ({ classes, children, theme }) => {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
-                {isMobile ? <SimpleMenu /> : <SimpleTabs />}
-            </AppBar>
+            {isMobile ? <SimpleMenu /> : <SimpleTabs />}
+
             {children}
             <Footer />
         </div>

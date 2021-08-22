@@ -18,6 +18,9 @@ const styles = (theme) => ({
         // backgroundRepeat: 'no-repeat',
         // backgroundSize: 'cover',
     },
+    '@media screen and (max-width: 1048px)': {
+
+    },
     spacer: {
         paddingTop: 50,
         paddingBottom: 50,

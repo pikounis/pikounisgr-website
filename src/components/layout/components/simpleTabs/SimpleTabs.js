@@ -17,7 +17,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 function TabPanel(props) {
     const {
-        children, value, index, ...other
+        children,
+        value,
+        index,
+        ...other
     } = props;
 
     const handleClose = () => {
@@ -48,62 +51,60 @@ function a11yProps(index) {
     };
 }
 
-const SimpleTabs = ({ classes, tabIndex, changeRoute }) => {
-
+const SimpleTabs = ({
+    classes,
+    tabIndex,
+    changeRoute,
+}) => {
     const handleChange = (event, newValue) => {
         changeRoute(newValue);
     };
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
-                {/*<img*/}
-                {/*    src={pikounisLogo}*/}
-                {/*    className={classes.pikounisLogo}*/}
-                {/*/>*/}
-                <Tabs
-                    value={tabIndex}
-                    onChange={handleChange}
-                    aria-label="simple tabs example"
-                    className={classes.theTabs}
-                >
-                    <Tab
-                        label={<I18n t="home" />}
-                        {...a11yProps(0)}
-                        component={Link}
-                        to="/"
-                        onClick={() => changeRoute('/')}
-                    />
-                    <Tab
-                        label={<I18n t="whoWeAre" />}
-                        {...a11yProps(1)}
-                        component={Link}
-                        to="/who-we-are"
-                        onClick={() => changeRoute('/who-we-are')}
-                    />
-                    <Tab
-                        label={<I18n t="gallery" />}
-                        {...a11yProps(2)}
-                        component={Link}
-                        to="/gallery"
-                        onClick={() => changeRoute('/gallery')}
-                    />
-                    <Tab
-                        label={<I18n t="awards" />}
-                        {...a11yProps(3)}
-                        component={Link}
-                        to="/awards"
-                        onClick={() => changeRoute('/awards')}
-                    />
-                    <Tab
-                        label={<I18n t="contact" />}
-                        {...a11yProps(4)}
-                        component={Link}
-                        to="/contact"
-                        onClick={() => changeRoute('/contact')}
-                    />
-                </Tabs>
-            </AppBar>
+            <Tabs
+                value={tabIndex}
+                onChange={handleChange}
+                aria-label="simple tabs example"
+                className={classes.theTabs}
+                centered
+            >
+                <Tab
+                    label={<I18n t="home" />}
+                    {...a11yProps(0)}
+                    component={Link}
+                    to="/"
+                    onClick={() => changeRoute('/')}
+                />
+                <Tab
+                    label={<I18n t="whoWeAre" />}
+                    {...a11yProps(1)}
+                    component={Link}
+                    to="/who-we-are"
+                    onClick={() => changeRoute('/who-we-are')}
+                />
+                <Tab
+                    label={<I18n t="gallery" />}
+                    {...a11yProps(2)}
+                    component={Link}
+                    to="/gallery"
+                    onClick={() => changeRoute('/gallery')}
+                />
+                <Tab
+                    label={<I18n t="awards" />}
+                    {...a11yProps(3)}
+                    component={Link}
+                    to="/awards"
+                    onClick={() => changeRoute('/awards')}
+                />
+                <Tab
+                    label={<I18n t="contact" />}
+                    {...a11yProps(4)}
+                    component={Link}
+                    to="/contact"
+                    onClick={() => changeRoute('/contact')}
+                />
+            </Tabs>
         </div>
     );
 };

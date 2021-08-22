@@ -1,13 +1,13 @@
 const styles = (theme) => ({
     root: {
-        flexGrow: 1,
-        backgroundColor: theme.palette.background.paper,
-        // color: '#000000',
+        position: 'absolute',
+        right: 0,
+        left: 0,
     },
     theTabs: {
-        position: 'absolute',
-        right: '25%',
-        top: 10,
+        margin: '0 auto',
+        display: 'block',
+        maxWidth: 'fit-content',
     },
     pikounisLogo: {
         width: '3em',

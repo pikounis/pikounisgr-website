@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -7,14 +5,15 @@ import styles from './styles';
 import I18n from '../../components/I18n/I18n';
 import ComplexButton from './components/complexButton';
 import shop from '../../assets/gallery/22.png';
-// import fishbg from '../../assets/fishbg.png';
+import pikounisLogo from '../../assets/logo1112.png';
+import fishbg from '../../assets/fishbg.png';
 
 const Home = ({ classes }) => (
     <div>
         <div>
             <img
-                // src={fishbg}
                 src={shop}
+                // src={pikounisLogo}
                 alt="fish"
                 className={classes.bgphoto}
             />
