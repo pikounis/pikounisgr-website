@@ -9,41 +9,25 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import styles from './styles';
 
-const AlertDialog = ({ classes }) => {
-    const [open, setOpen] = React.useState(false);
-
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
-
+const AlertDialog = ({ img, open, onClose, classes }) => {
     return (
         <div>
-            <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-                Open alert dialog
-            </Button>
             <Dialog
                 open={open}
-                onClose={handleClose}
+                onClose={onClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
             >
-                <DialogTitle id="alert-dialog-title">Use Google's location service?</DialogTitle>
+                {/*<DialogTitle id="alert-dialog-title">   </DialogTitle>*/}
                 <DialogContent>
-                    <DialogContentText id="alert-dialog-description">
-                        Let Google help apps determine location. This means sending anonymous location data to
-                        Google, even when no apps are running.
-                    </DialogContentText>
+                    {/*<DialogContentText id="alert-dialog-description">*/}
+                    {/*   */}
+                    {/*</DialogContentText>*/}
+                    <img src={img} alt="my image" />
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose} color="primary">
-                        Disagree
-                    </Button>
-                    <Button onClick={handleClose} color="primary" autoFocus>
-                        Agree
+                    <Button onClick={onClose} color="primary" autoFocus>
+                        Close
                     </Button>
                 </DialogActions>
             </Dialog>

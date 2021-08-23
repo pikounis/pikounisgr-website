@@ -7,10 +7,11 @@ import ComplexButton from './components/complexButton';
 import shop from '../../assets/gallery/22.png';
 import pikounisLogo from '../../assets/logo1112.png';
 import fishbg from '../../assets/fishbg.png';
+import SimpleMenu from '../../components/layout/components/languages';
 
 const Home = ({ classes }) => (
     <div>
-        <div>
+        <div className={classes.photoDiv}>
             <img
                 src={shop}
                 // src={pikounisLogo}

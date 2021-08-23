@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import I18n from '../../../I18n/I18n';
 import styles from './styles';
+import Typography from '@material-ui/core/Typography';
 
 const SimpleMenu = ({ classes }) => {
     const [anchorEl, setAnchorEl] = React.useState(null);

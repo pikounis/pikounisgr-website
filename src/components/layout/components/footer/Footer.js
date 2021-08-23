@@ -11,8 +11,10 @@ import IconButton from '@material-ui/core/IconButton';
 import ChatIcon from '@material-ui/icons/Chat';
 import styles from './styles';
 import PhoneIcon from '@material-ui/icons/Phone';
+import Languages from '../languages/languages';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import I18n from '../../../I18n/I18n';
+import { useLocation } from 'react-router-dom'
 // import MenuIcon from '@material-ui/icons/Menu';
 
 const Footer = ({ classes }) => (
@@ -20,7 +22,7 @@ const Footer = ({ classes }) => (
         <div className={classes.root1}>
             <AppBar position="static">
                 <Toolbar>
-                    <Grid className={classes.container} container justify="space-around">
+                    <Grid className={classes.container} container justifyContent="space-around">
                         <Grid item xs={12} className={classes.ItemsAtCenter1}>
                             <IconButton
                                 href="tel:+302108011311"
@@ -58,9 +60,6 @@ const Footer = ({ classes }) => (
                             <IconButton href="https://www.facebook.com/Pikounis-112467636890824/?hc_ref=ART0t1_dIxd6KaoN3pgnluoVuonRPIPwS6rXu0F3grjOfgD-obWlp2_YZLqeeTW4NF0&fref=nf&__xts__[0]=68.ARC-9pZH9mpmt_MIhq4DhjnhuZkppaBPMw0wnjpIgOQAuXhG0RVbFZ060IaRwcHwz9VwzZ0F6DWSG7SOmo952rrHVxNqu1ITGdWxbY3ZnF_-BNQdNcaFQ_DgTtMfffgNgtWlmq8hfc9AzRHBBygPq3Bsq8FuxVlpOoXxXWtZFD0NTxuKzXafqQ-nhr23dMyyJ-Lj5F3x8aKI73IdMAeAfRBQOIcY5arJvQRnGjs7h073X7FHbI8d2XEqFdDCrnEP2t4KP7kzKPI3yQimR79upZ0meaQtqVPtNk9kwwjAkY8ywxMnLfM&__tn__=kC-R/" target="_blank">
                                 <FacebookIcon />
                             </IconButton>
-                            {/*<IconButton href="tel:+302108011311">*/}
-                            {/*    <CallIcon />*/}
-                            {/*</IconButton>*/}
                             <IconButton href="mailto:info@pikounis.gr" target="_blank">
                                 <ChatIcon />
                             </IconButton>
@@ -72,7 +71,7 @@ const Footer = ({ classes }) => (
         <div className={classes.root2}>
             <AppBar position="static">
                 <Toolbar>
-                    <Grid className={classes.container} container justify="space-around">
+                    <Grid className={classes.container} container justifyContent="space-around">
                         <Grid item xs={3} className={classes.ItemsAtCenter2}>
                             <IconButton
                                 href="tel:+302108011311"
@@ -110,12 +109,16 @@ const Footer = ({ classes }) => (
                             <IconButton href="https://www.facebook.com/Pikounis-112467636890824/?hc_ref=ART0t1_dIxd6KaoN3pgnluoVuonRPIPwS6rXu0F3grjOfgD-obWlp2_YZLqeeTW4NF0&fref=nf&__xts__[0]=68.ARC-9pZH9mpmt_MIhq4DhjnhuZkppaBPMw0wnjpIgOQAuXhG0RVbFZ060IaRwcHwz9VwzZ0F6DWSG7SOmo952rrHVxNqu1ITGdWxbY3ZnF_-BNQdNcaFQ_DgTtMfffgNgtWlmq8hfc9AzRHBBygPq3Bsq8FuxVlpOoXxXWtZFD0NTxuKzXafqQ-nhr23dMyyJ-Lj5F3x8aKI73IdMAeAfRBQOIcY5arJvQRnGjs7h073X7FHbI8d2XEqFdDCrnEP2t4KP7kzKPI3yQimR79upZ0meaQtqVPtNk9kwwjAkY8ywxMnLfM&__tn__=kC-R/" target="_blank">
                                 <FacebookIcon />
                             </IconButton>
-                            {/*<IconButton href="tel:+302108011311">*/}
-                            {/*    <CallIcon />*/}
-                            {/*</IconButton>*/}
+                            <IconButton
+                                onClick={console.log(useLocation().pathname)}
+                            >
+                                <CallIcon />
+                            </IconButton>
                             <IconButton href="mailto:info@pikounis.gr" target="_blank">
                                 <ChatIcon />
                             </IconButton>
+                            <Languages />
+
                         </Grid>
                     </Grid>
                 </Toolbar>

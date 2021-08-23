@@ -18,6 +18,9 @@ const styles = (theme) => ({
         // backgroundRepeat: 'no-repeat',
         // backgroundSize: 'cover',
     },
+    photoDiv: {
+        height: '100vh',
+    },
     '@media screen and (max-width: 1048px)': {
 
     },
