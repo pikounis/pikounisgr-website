@@ -8,7 +8,7 @@ import I18n from '../../components/I18n/I18n';
 import Container from '@material-ui/core/Container';
 import React from 'react';
 
-const WhoWeAre = ({ classes }) => (
+const YachtSupplies = ({ classes }) => (
     <Container>
         <div className={classes.spacer}/>
         <Typography
@@ -29,7 +29,7 @@ const WhoWeAre = ({ classes }) => (
                     variant="h3"
                     className={classes.gbtitleReverse}
                 >
-                    Development Strategy
+                    Development 
                 </Typography>
             )}
             rtl
@@ -55,7 +55,7 @@ const WhoWeAre = ({ classes }) => (
                     variant="h3"
                     className={classes.gbtitle}
                 >
-                    Global Communications
+                    Global
                 </Typography>
             )}
             paperProps={{
@@ -80,7 +80,7 @@ const WhoWeAre = ({ classes }) => (
                     variant="h3"
                     className={classes.gbtitleReverse}
                 >
-                    Development Strategy
+                    Development
                 </Typography>
             )}
             rtl
@@ -99,4 +99,4 @@ const WhoWeAre = ({ classes }) => (
 
 );
 
-export default withStyles(styles)(WhoWeAre);
+export default withStyles(styles)(YachtSupplies);

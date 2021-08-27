@@ -2,9 +2,12 @@ import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import photo from '../../../../assets/pershing.png';
+import photo from '../../../../assets/boat.png';
 import I18n from '../../../../components/I18n/I18n';
 import styles from './styles';
+import { Link } from 'react-router-dom';
+import { changeRoute } from '../../../../models/ui';
+import MenuItem from '@material-ui/core/MenuItem';
 
 const images = [
     {
@@ -25,7 +28,11 @@ const ComplexButton = ({ classes }) => (
                 style={{
                     width: image.width,
                 }}
-                href="https://newport-mps.gr"
+                component={Link}
+                to="/yacht-supplies"
+                onClick={() => {
+                    changeRoute('/yacht-supplies')
+                }}
             >
                 <span
                     className={classes.imageSrc}

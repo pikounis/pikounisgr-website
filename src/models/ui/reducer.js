@@ -3,7 +3,7 @@ import { changeRoute } from './actions';
 
 const routeIndex = [
     '/',
-    '/who-we-are',
+    '/yacht-supplies',
     '/gallery',
     '/awards',
     '/contact',
