@@ -77,7 +77,7 @@ const SimpleTabs = ({
                     onClick={() => changeRoute('/')}
                 />
                 <Tab
-                    label={<I18n t="whoWeAre" />}
+                    label={<I18n t="yachtSupplies" />}
                     {...a11yProps(1)}
                     component={Link}
                     to="/who-we-are"

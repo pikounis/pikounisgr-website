@@ -1,3 +1,5 @@
+import shop from 'assets/gallery/22.png';
+
 const styles = (theme) => ({
     container: {
         backgroundColor: theme.palette.primary.main,
@@ -14,12 +16,13 @@ const styles = (theme) => ({
     bgphoto: {
         width: '100%',
         height: '100%',
-        // backgroundPosition: 'center',
-        // backgroundRepeat: 'no-repeat',
-        // backgroundSize: 'cover',
     },
     photoDiv: {
         height: '100vh',
+        backgroundImage: `url(${shop})`,
+        // backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     },
     '@media screen and (max-width: 1048px)': {
 
