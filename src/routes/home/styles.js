@@ -24,8 +24,21 @@ const styles = (theme) => ({
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
     },
-    '@media screen and (max-width: 1048px)': {
-
+    logoSize: {
+        height: 200,
+        margin: 'auto',
+        display: 'block',
+        paddingTop: 50,
+    },
+    photoHome: {
+        '@media screen and (max-width: 1280px)': {
+            display: 'none',
+        },
+    },
+    logoHome: {
+        '@media screen and (min-width: 1280px)': {
+            display: 'none',
+        },
     },
     spacer: {
         paddingTop: 50,

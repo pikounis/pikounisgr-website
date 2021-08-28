@@ -2,18 +2,40 @@ import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import photo from '../../../../assets/boat.png';
+import { Link } from 'react-router-dom';
+import MenuItem from '@material-ui/core/MenuItem';
+import photo1 from '../../../../assets/yacht.png';
+import photo2 from '../../../../assets/awards/cert2.png';
+import photo3 from '../../../../assets/gallery/26.png';
+import photo4 from '../../../../assets/news/profile.png';
 import I18n from '../../../../components/I18n/I18n';
 import styles from './styles';
-import { Link } from 'react-router-dom';
 import { changeRoute } from '../../../../models/ui';
-import MenuItem from '@material-ui/core/MenuItem';
 
 const images = [
     {
-        url: photo,
+        url: photo1,
         title: <I18n t="yachtSupplies" />,
-        width: '100%',
+        width: '40%',
+        link: '/yacht-supplies',
+    },
+    {
+        url: photo2,
+        title: <I18n t="awards" />,
+        width: '20%',
+        link: '/awards',
+    },
+    {
+        url: photo3,
+        title: <I18n t="gallery" />,
+        width: '20%',
+        link: '/gallery',
+    },
+    {
+        url: photo4,
+        title: <I18n t="contact" />,
+        width: '20%',
+        link: '/contact',
     },
 ];
 
@@ -29,9 +51,9 @@ const ComplexButton = ({ classes }) => (
                     width: image.width,
                 }}
                 component={Link}
-                to="/yacht-supplies"
+                to={image.link}
                 onClick={() => {
-                    changeRoute('/yacht-supplies')
+                    changeRoute('/yacht-supplies');
                 }}
             >
                 <span

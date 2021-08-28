@@ -6,7 +6,10 @@ import Typography from '@material-ui/core/Typography';
 import { GraphicBox } from 'components';
 import I18n from '../../components/I18n/I18n';
 import Container from '@material-ui/core/Container';
-import React from 'react';
+import photo1 from '../../assets/yachtSupplies/photo01.png';
+import photo2 from '../../assets/yachtSupplies/van_yacht.png';
+import photo3 from '../../assets/yachtSupplies/quality_guarantee.png';
+
 
 const YachtSupplies = ({ classes }) => (
     <Container>
@@ -20,17 +23,17 @@ const YachtSupplies = ({ classes }) => (
         <div className={classes.spacer}/>
         <GraphicBox
             graphic={(
-                // <img
-                //     className={classes.image}
-                //     src={Photo3}
-                //     alt="graphic"
-                // />
-                <Typography
-                    variant="h3"
-                    className={classes.gbtitleReverse}
-                >
-                    Development 
-                </Typography>
+                <img
+                    className={classes.image}
+                    src={photo1}
+                    alt="graphic"
+                />
+                // <Typography
+                //     variant="h3"
+                //     className={classes.gbtitleReverse}
+                // >
+                //     Development
+                // </Typography>
             )}
             rtl
             paperProps={{
@@ -46,17 +49,17 @@ const YachtSupplies = ({ classes }) => (
         </GraphicBox>
         <GraphicBox
             graphic={(
-                // <img
-                //     className={classes.image}
-                //     src={Photo1}
-                //     alt="graphic"
-                // />
-                <Typography
-                    variant="h3"
-                    className={classes.gbtitle}
-                >
-                    Global
-                </Typography>
+                <img
+                    className={classes.image}
+                    src={photo2}
+                    alt="graphic"
+                />
+                // <Typography
+                //     variant="h3"
+                //     className={classes.gbtitle}
+                // >
+                //     Global
+                // </Typography>
             )}
             paperProps={{
                 className: classes.paper,
@@ -71,17 +74,17 @@ const YachtSupplies = ({ classes }) => (
         </GraphicBox>
         <GraphicBox
             graphic={(
-                // <img
-                //     className={classes.image}
-                //     src={Photo3}
-                //     alt="graphic"
-                // />
-                <Typography
-                    variant="h3"
-                    className={classes.gbtitleReverse}
-                >
-                    Development
-                </Typography>
+                <img
+                    className={classes.image}
+                    src={photo3}
+                    alt="graphic"
+                />
+                // <Typography
+                //     variant="h3"
+                //     className={classes.gbtitleReverse}
+                // >
+                //     Development
+                // </Typography>
             )}
             rtl
             paperProps={{

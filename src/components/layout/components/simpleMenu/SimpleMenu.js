@@ -1,14 +1,13 @@
 import React from 'react';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { Link } from 'react-router-dom';
 import { changeRoute } from 'models/ui';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
-import I18n from '../../../I18n/I18n';
+import I18n from 'components/I18n/I18n';
+import RefLink from 'components/i18nLink';
 import styles from './styles';
-import Typography from '@material-ui/core/Typography';
 
 const SimpleMenu = ({ classes }) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -39,8 +38,9 @@ const SimpleMenu = ({ classes }) => {
                 onClose={handleClose}
             >
                 <MenuItem
-                    component={Link}
-                    to="/"
+                    component={RefLink}
+                    ignoreLocale
+                    to="/en"
                     onClick={() => {
                         changeRoute('/');
                         handleClose();
@@ -49,8 +49,9 @@ const SimpleMenu = ({ classes }) => {
                     <I18n t="home" />
                 </MenuItem>
                 <MenuItem
-                    component={Link}
-                    to="/yacht-supplies"
+                    component={RefLink}
+                    ignoreLocale
+                    to="/en/yacht-supplies"
                     onClick={() => {
                         changeRoute('/yacht-supplies');
                         handleClose();
@@ -59,8 +60,9 @@ const SimpleMenu = ({ classes }) => {
                     <I18n t="yachtSupplies" />
                 </MenuItem>
                 <MenuItem
-                    component={Link}
-                    to="/gallery"
+                    component={RefLink}
+                    ignoreLocale
+                    to="/en/gallery"
                     onClick={() => {
                         changeRoute('/gallery');
                         handleClose();
@@ -69,8 +71,9 @@ const SimpleMenu = ({ classes }) => {
                     <I18n t="gallery" />
                 </MenuItem>
                 <MenuItem
-                    component={Link}
-                    to="/awards"
+                    component={RefLink}
+                    ignoreLocale
+                    to="/en/awards"
                     onClick={() => {
                         changeRoute('/awards');
                         handleClose();
@@ -79,8 +82,9 @@ const SimpleMenu = ({ classes }) => {
                     <I18n t="awards" />
                 </MenuItem>
                 <MenuItem
-                    component={Link}
-                    to="/contact"
+                    component={RefLink}
+                    ignoreLocale
+                    to="/en/contact"
                     onClick={() => {
                         changeRoute('/contact');
                         handleClose();

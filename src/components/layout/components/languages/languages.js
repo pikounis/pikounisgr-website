@@ -1,16 +1,17 @@
 import React from 'react';
-// import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import LanguageIcon from '@material-ui/icons/Language';
 import IconButton from '@material-ui/core/IconButton';
+import greece from 'assets/flags/greece.svg';
+import uk from 'assets/flags/uk.svg';
+import spain from 'assets/flags/spain.svg';
+import france from 'assets/flags/france.svg';
+import arabic from 'assets/flags/arabic.svg';
+import { changeRoute } from 'models/ui';
+import RefLink from 'components/i18nLink';
 import styles from './styles';
-import greece from '../../../../assets/flags/greece.svg';
-import uk from '../../../../assets/flags/uk.svg';
-import spain from '../../../../assets/flags/spain.svg';
-import france from '../../../../assets/flags/france.svg';
-import arabic from '../../../../assets/flags/arabic.svg';
 
 function Languages({ classes }) {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -41,9 +42,12 @@ function Languages({ classes }) {
                 onClose={handleClose}
             >
                 <MenuItem
-                    onClick={handleClose}
-                    component="a"
-                    href="/"
+                    component={RefLink}
+                    to="/"
+                    onClick={() => {
+                        changeRoute('/');
+                        handleClose();
+                    }}
                 >
                     <img
                         src={greece}
@@ -53,9 +57,12 @@ function Languages({ classes }) {
                     Ελληνικά
                 </MenuItem>
                 <MenuItem
-                    onClick={handleClose}
-                    component="a"
-                    href="/en"
+                    component={RefLink}
+                    to="/"
+                    onClick={() => {
+                        changeRoute('/');
+                        handleClose();
+                    }}
                 >
                     <img
                         src={uk}
@@ -65,9 +72,12 @@ function Languages({ classes }) {
                     English
                 </MenuItem>
                 <MenuItem
-                    onClick={handleClose}
-                    component="a"
-                    href="/es"
+                    component={RefLink}
+                    to="/"
+                    onClick={() => {
+                        changeRoute('/');
+                        handleClose();
+                    }}
                 >
                     <img
                         src={spain}
@@ -77,9 +87,12 @@ function Languages({ classes }) {
                     Español
                 </MenuItem>
                 <MenuItem
-                    onClick={handleClose}
-                    component="a"
-                    href="/fr"
+                    component={RefLink}
+                    to="/"
+                    onClick={() => {
+                        changeRoute('/');
+                        handleClose();
+                    }}
                 >
                     <img
                         src={france}
@@ -89,9 +102,12 @@ function Languages({ classes }) {
                     Français
                 </MenuItem>
                 <MenuItem
-                    onClick={handleClose}
-                    component="a"
-                    href="/ar"
+                    component={RefLink}
+                    to="/en"
+                    onClick={() => {
+                        changeRoute('/');
+                        handleClose();
+                    }}
                 >
                     <img
                         src={arabic}
