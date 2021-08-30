@@ -40,7 +40,7 @@ const SimpleMenu = ({ classes }) => {
                 <MenuItem
                     component={RefLink}
                     ignoreLocale
-                    to="/en"
+                    to="/"
                     onClick={() => {
                         changeRoute('/');
                         handleClose();
@@ -51,7 +51,7 @@ const SimpleMenu = ({ classes }) => {
                 <MenuItem
                     component={RefLink}
                     ignoreLocale
-                    to="/en/yacht-supplies"
+                    to="/yacht-supplies"
                     onClick={() => {
                         changeRoute('/yacht-supplies');
                         handleClose();
@@ -62,7 +62,7 @@ const SimpleMenu = ({ classes }) => {
                 <MenuItem
                     component={RefLink}
                     ignoreLocale
-                    to="/en/gallery"
+                    to="/gallery"
                     onClick={() => {
                         changeRoute('/gallery');
                         handleClose();
@@ -73,7 +73,7 @@ const SimpleMenu = ({ classes }) => {
                 <MenuItem
                     component={RefLink}
                     ignoreLocale
-                    to="/en/awards"
+                    to="/awards"
                     onClick={() => {
                         changeRoute('/awards');
                         handleClose();
@@ -84,7 +84,7 @@ const SimpleMenu = ({ classes }) => {
                 <MenuItem
                     component={RefLink}
                     ignoreLocale
-                    to="/en/contact"
+                    to="/contact"
                     onClick={() => {
                         changeRoute('/contact');
                         handleClose();

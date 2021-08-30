@@ -30,7 +30,8 @@ const styles = (theme) => ({
         display: 'block',
         paddingTop: 50,
     },
-    photoHome: {
+    shopHome: {
+        // '@media screen and (max-width: 1280px)': {
         '@media screen and (max-width: 1280px)': {
             display: 'none',
         },

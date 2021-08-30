@@ -117,8 +117,7 @@ const Footer = ({ classes }) => (
                             <IconButton href="mailto:info@pikounis.gr" target="_blank">
                                 <ChatIcon />
                             </IconButton>
-                            <Languages />
-
+                            {/*<Languages />*/}
                         </Grid>
                     </Grid>
                 </Toolbar>

@@ -71,51 +71,51 @@ function Languages({ classes }) {
                     />
                     English
                 </MenuItem>
-                <MenuItem
-                    component={RefLink}
-                    to="/"
-                    onClick={() => {
-                        changeRoute('/');
-                        handleClose();
-                    }}
-                >
-                    <img
-                        src={spain}
-                        className={classes.flagsLogo}
-                        alt="Waze"
-                    />
-                    Español
-                </MenuItem>
-                <MenuItem
-                    component={RefLink}
-                    to="/"
-                    onClick={() => {
-                        changeRoute('/');
-                        handleClose();
-                    }}
-                >
-                    <img
-                        src={france}
-                        className={classes.flagsLogo}
-                        alt="Waze"
-                    />
-                    Français
-                </MenuItem>
-                <MenuItem
-                    component={RefLink}
-                    to="/en"
-                    onClick={() => {
-                        changeRoute('/');
-                        handleClose();
-                    }}
-                >
-                    <img
-                        src={arabic}
-                        className={classes.flagsLogo}
-                        alt="Waze"
-                    />
-                    العربية
-                </MenuItem>
+                {/*<MenuItem*/}
+                {/*    component={RefLink}*/}
+                {/*    to="/"*/}
+                {/*    onClick={() => {*/}
+                {/*        changeRoute('/');*/}
+                {/*        handleClose();*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    <img*/}
+                {/*        src={spain}*/}
+                {/*        className={classes.flagsLogo}*/}
+                {/*        alt="Waze"*/}
+                {/*    />*/}
+                {/*    Español*/}
+                {/*</MenuItem>*/}
+                {/*<MenuItem*/}
+                {/*    component={RefLink}*/}
+                {/*    to="/"*/}
+                {/*    onClick={() => {*/}
+                {/*        changeRoute('/');*/}
+                {/*        handleClose();*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    <img*/}
+                {/*        src={france}*/}
+                {/*        className={classes.flagsLogo}*/}
+                {/*        alt="Waze"*/}
+                {/*    />*/}
+                {/*    Français*/}
+                {/*</MenuItem>*/}
+                {/*<MenuItem*/}
+                {/*    component={RefLink}*/}
+                {/*    to="/en"*/}
+                {/*    onClick={() => {*/}
+                {/*        changeRoute('/');*/}
+                {/*        handleClose();*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    <img*/}
+                {/*        src={arabic}*/}
+                {/*        className={classes.flagsLogo}*/}
+                {/*        alt="Waze"*/}
+                {/*    />*/}
+                {/*    العربية*/}
+                {/*</MenuItem>*/}
             </Menu>
         </div>
     );

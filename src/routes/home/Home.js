@@ -16,7 +16,7 @@ const Home = ({ classes }) => (
         </div>
 
         <Container maxWidth="lg" className={classes.spacer}>
-            <Typography>
+            <Typography align="justify">
                 <I18n t="theNamePikounis" />
             </Typography>
         </Container>
