@@ -11,7 +11,7 @@ const styles = (theme) => ({
             // color: '#000000',
         },
     },
-    '@media screen and (min-width: 1024px)': {
+    '@media screen and (min-width: 1025px)': {
         root1: {
             flexGrow: 1,
             display: 'none',
